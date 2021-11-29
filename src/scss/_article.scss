@@ -4,13 +4,13 @@
 
     display: flex;
     flex-direction: column;
-    background: var(--color-footer);
+    background: $color-footer;
 }
 
 .gpt3__blog-container_article-image {
     width: 100%;
     height: 100%;
-    background: var(--color-bg);
+    background: $color-bg;
 }
 
 .gpt3__blog-container_article-image img {
@@ -28,7 +28,7 @@
 }
 
 .gpt3__blog-container_article-content p {
-    font-family: var(--font-family);
+    font-family: $font_family;
     font-size: 11.65px;
     font-weight: 700;
     line-height: 35px;
@@ -37,7 +37,7 @@
 }
 
 .gpt3__blog-container_article-content h3 {
-    font-family: var(--font-family);
+    font-family: $font_family;
     font-size: 25.11px;
     font-weight: 800;
     line-height: 30.30px;

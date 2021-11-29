@@ -1,9 +1,8 @@
-import './App.css';
 import {Features,Footer,Possibility,WhatGpt,Header,Blog} from './sections'
 import {Brand,Cta,Navbar} from './components'
 function App() {
   return (
-    <div className="App">
+    <div className="landingPage">
       <div className="gradient__bg">
         <Navbar/>
         <Header/>

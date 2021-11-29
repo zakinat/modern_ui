@@ -1,0 +1,12 @@
+.brand{
+    @include flex-jst_dC-al_dC();
+    flex-wrap: wrap;
+        div{
+            flex: 1;
+            max-width: 150px;
+            min-width: 120px;
+            margin: 1rem;
+            @include flex-jst_dC-al_dC();
+        }
+}
+

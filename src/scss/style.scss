@@ -1,0 +1,33 @@
+@import 'config';
+@import 'mixins';
+@import 'utility';
+@import 'article';
+@import 'blog';
+@import 'brand';
+@import 'cta';
+@import 'feature';
+@import 'features';
+@import 'footer';
+@import 'header';
+@import 'navbar';
+@import 'posibility';
+@import 'WhatGpt';
+@import 'animation';
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  body{
+    background-color: $color-bg;
+  }
+  
+  a{
+    color:unset;
+    text-decoration: none;
+  }
+
+  @import 'mediaQ';

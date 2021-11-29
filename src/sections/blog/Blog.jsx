@@ -1,8 +1,6 @@
 import React from 'react';
 import {Article} from '../../components/';
-import { blog01, blog02, blog03, blog04, blog05 } from './impot_img';
-import './blog.css';
-
+import {groupA,groupB} from './content'
 const Blog = () => (
   <div className="gpt3__blog section__padding" id="blog">
     <div className="gpt3__blog-heading">
@@ -10,13 +8,12 @@ const Blog = () => (
     </div>
     <div className="gpt3__blog-container">
       <div className="gpt3__blog-container_groupA">
-        <Article imgUrl={blog01} date="Sep 26, 2021" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
+        <Article imgUrl={groupA.img} date={groupA.date} text={groupA.text} />
       </div>
       <div className="gpt3__blog-container_groupB">
-        <Article imgUrl={blog02} date="Sep 26, 2021" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
-        <Article imgUrl={blog03} date="Sep 26, 2021" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
-        <Article imgUrl={blog04} date="Sep 26, 2021" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
-        <Article imgUrl={blog05} date="Sep 26, 2021" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
+        {groupB.map((item, index) => (
+        <Article  imgUrl={item.img} date={item.date} text={item.text} key={index}/>
+          ))}
       </div>
     </div>
   </div>

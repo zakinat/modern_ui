@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
 
-    background: var(--color-footer);
+    background: $color-footer;
 }
 
 .gpt3__footer-heading {
@@ -15,7 +15,7 @@
 }
 
 .gpt3__footer-heading h1 {
-    font-family: var(--font-family);
+    font-family: $font_family;
     font-weight: 800;
     font-size: 64px;
     line-height: 75px;
@@ -36,7 +36,7 @@
 
 .gpt3__footer-btn p {
     font-size: 18px;
-    font-family: var(--font-family);
+    font-family: $font_family;
     line-height: 21px;
     color: #fff;
     word-spacing: 2px;
@@ -71,7 +71,7 @@
 }
 
 .gpt3__footer-links_logo p {
-    font-family: var(--font-family);
+    font-family: $font_family;
     font-size: 12px;
     line-height: 15px;
     color: #fff;
@@ -86,7 +86,7 @@
 .gpt3__footer-links_div h4 {
     font-size: 14px;
     line-height: 17px;
-    font-family: var(--font-family);
+    font-family: $font_family;
     color: #fff;
 
     margin-bottom: 0.9rem;
@@ -95,7 +95,7 @@
 .gpt3__footer-links_div p {
     font-size: 12px;
     line-height: 15px;
-    font-family: var(--font-family);
+    font-family: $font_family;
     color: #fff;
 
     margin: 0.5rem 0;
@@ -110,7 +110,7 @@
 
 .gpt3__footer-copyright p {
     font-size: 12px;
-    font-family: var(--font-family);
+    font-family: $font_family;
     line-height: 15px;
     color: #fff;
 }
