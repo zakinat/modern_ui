@@ -1,11 +1,11 @@
 import React from 'react'
 const Article = ({date,text,imgUrl}) => {
     return (
-        <div className="gpt3__blog-container_article">
-            <div className="gpt3__blog-container_article-image">
+        <div className="blog__container-article">
+            <div className="blog__container-article-image">
                 <img src={imgUrl} alt="blog_image" />
             </div>
-            <div className="gpt3__blog-container_article-content">
+            <div className="blog__container-article-content">
                 <div>
                     <p>{date}</p>
                     <h3>{text}</h3>

@@ -1,83 +1,82 @@
-.gpt3__cta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.cta {
+    @include flex-jst_dC-al_dC($jst:space-between);
     flex-direction: row;
-
     padding: 2rem;
     margin: 4rem;
     border-radius: 1rem;
     background: $gradient-bar;
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+        
+            text-align: left;
+            color: #fff;
+
+                p{
+                    font-family: $font_family;
+                    font-size: 12px;
+                    line-height: 30px;
+                    font-weight: 500;
+                }
+                h3{
+                    font-family: $font_family;
+                    font-size: 24px;
+                    line-height: 45px;
+                    font-weight: 800;
+                }
+        }
+
+        &__btn{
+            @include flex-jst_dC-al_dC();
+            margin-left: 2rem;
+
+                button{
+                    background: #000;
+                    color: #fff;
+                    font-family: $font_family;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 30px;
+                    padding: 0.5rem 1rem;
+                    border-radius: 2rem;
+                
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    min-width: 150px;
+                }
+        }
 }
 
-.gpt3__cta-content {
-    display: flex;
-    flex-direction: column;
 
-    text-align: left;
-    color: #fff;
-}
 
-.gpt3__cta-content p {
-    font-family: $font_family;
-    font-size: 12px;
-    line-height: 30px;
-    font-weight: 500;
-}
 
-.gpt3__cta-content h3 {
-    font-family: $font_family;
-    font-size: 24px;
-    line-height: 45px;
-    font-weight: 800;
-}
 
-.gpt3__cta-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-left: 2rem;
-}
-
-.gpt3__cta-btn button {
-    background: #000;
-    color: #fff;
-    font-family: $font_family;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-
-    border: none;
-    outline: none;
-    cursor: pointer;
-    min-width: 150px;
-}
+//media queries
 
 @media screen and (max-width: 650px) {
-    .gpt3__cta {
+    .cta {
         flex-direction: column;
     }
 
-    .gpt3__cta-btn {
+    .cta__btn {
         margin: 2rem 0 0;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .gpt3__cta {
+    .cta {
         flex-direction: column;
         margin: 4rem 2rem;
     }
 
-    .gpt3__cta-content h3 {
+    .cta__content h3 {
         font-size: 18px;
         line-height: 32px;
     }
 
-    .gpt3__cta-btn button {
+    .cta__btn button {
         font-size: 14px;
         line-height: 28px;
     }
